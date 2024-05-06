@@ -5,7 +5,7 @@ class NewMoviesWiget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Padding(
+        Padding(
           padding: EdgeInsets.symmetric(horizontal: 10),
           child: Row(
             children: [
@@ -57,7 +57,7 @@ class NewMoviesWiget extends StatelessWidget {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          const Padding(
+                          Padding(
                               padding: EdgeInsets.symmetric(
                                 vertical: 10,
                                 horizontal: 5,
@@ -68,7 +68,7 @@ class NewMoviesWiget extends StatelessWidget {
                                   Text(
                                     "Mamonas Assasinas",
                                     style: TextStyle(
-                                     color: Color(0xFF00A470),
+                                      color: Color(0xFF00A470),
                                       fontSize: 18,
                                       fontWeight: FontWeight.w500,
                                     ),
