@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:projeto_modulo_4/model/SerieGenres_model.dart';
 import '../model/Serie_model.dart';
+import 'package:http/http.dart' as http;
 
 class SerieDetailsPage extends StatefulWidget {
   final SerieModel? serie;
@@ -63,7 +64,7 @@ class _SerieDetailsPageState extends State<SerieDetailsPage> {
                     image: DecorationImage(
                       image:
                           NetworkImage('${widget.serie?.backdropPath ?? ''}'),
-                      fit: BoxFit.cover,
+                      fit: BoxFit.fill,
                     ),
                   ),
                 ),
@@ -141,7 +142,7 @@ class _SerieDetailsPageState extends State<SerieDetailsPage> {
             Container(
               margin: EdgeInsets.symmetric(horizontal: 50, vertical: 0),
               child: Text(
-                '${widget.serie?.firstAirDate ?? ''} - ${widget.serie?.voteAverage ?? ''}',
+                '${DateTime.parse(widget.serie!.firstAirDate!).year} - ${widget.serie?.voteAverage ?? ''}',
                 style: TextStyle(
                   fontSize: 20,
                   color: Colors.white,
