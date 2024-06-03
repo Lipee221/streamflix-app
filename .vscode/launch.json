@@ -1,0 +1,28 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "projeto_modulo.4",
+            "cwd": "projeto_modulo.4",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "projeto_modulo.4 (profile mode)",
+            "cwd": "projeto_modulo.4",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "projeto_modulo.4 (release mode)",
+            "cwd": "projeto_modulo.4",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
